@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.page{
+    height: 300vh;
+    background: #e2e2e2;
+    position: relative;
+}
+
+.logo{
+    font-size: 22px;
+}
+
+.header{
+    color: white;
+    background: transparent;
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    transition: .3s ease-in-out;
+    height: 80px;
+}
+
+.scrolled{
+    height: 50px;
+    background: rgba(22, 22, 22, .9);
+    transition: .3s ease-in-out;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.nav{
+    width: 40%;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.nav-link a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+}
+
+.nav-link a:hover{
+    transition: .3s;
+    border-bottom: 2px solid white;
+}
+
+.content{
+    background: url("./balloon.jpg");
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    top: -80px;
+}
+
+.title{
+    color: white;
+    font-size: 50px;
+    margin-left: 20%;
+}
